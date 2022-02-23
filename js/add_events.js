@@ -37,7 +37,7 @@ function generateEvents(e) {
     date: date.value,
     description: description.value
   };
-  fetch('https://frozen-badlands-30191.herokuapp.com/add-events', {
+  fetch('https://calendar-server-test.herokuapp.com/add-events', {
         method: 'POST',
         headers: {
           'Authorization': 'Bearer ' + localStorage.getItem('token'),

@@ -25,7 +25,7 @@ function userStorage(event) {
         'auth': false,
     }
     
-    fetch('https://frozen-badlands-30191.herokuapp.com/sign-up', {
+    fetch('https://calendar-server-test.herokuapp.com/sign-up', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json;charset=utf-8'

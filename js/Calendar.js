@@ -55,7 +55,7 @@ class Calendar {
         }
     }
     async displayPoint() {
-        await fetch('https://frozen-badlands-30191.herokuapp.com/events', {
+        await fetch('https://calendar-server-test.herokuapp.com/events', {
         headers: {'Authorization': 'Bearer ' + localStorage.getItem('token') }
         })
         .then(res => res.json())

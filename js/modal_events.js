@@ -22,7 +22,7 @@ function onLoadEvents() {
       temp = data
     }
     else temp = data;
-    fetch('https://frozen-badlands-30191.herokuapp.com/events', {
+    fetch('https://calendar-server-test.herokuapp.com/events', {
       headers: {'Authorization': 'Bearer ' + localStorage.getItem('token') }
     })
     .then(res => res.json())

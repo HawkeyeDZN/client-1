@@ -7,7 +7,7 @@ function login_user(event) {
         return helper.message(false, 'You have empty fields!');
     } 
 
-    fetch('https://frozen-badlands-30191.herokuapp.com/sign-in', {
+    fetch('https://calendar-server-test.herokuapp.com/sign-in', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json;charset=utf-8'

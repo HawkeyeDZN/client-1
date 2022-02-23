@@ -1,7 +1,7 @@
 let userName = document.querySelector('.name');
 let calendar = new Calendar();
 calendar.renderCalendar();
-fetch('https://frozen-badlands-30191.herokuapp.com/calendar', {
+fetch('https://calendar-server-test.herokuapp.com/calendar', {
     headers: {'Authorization': 'Bearer ' + localStorage.getItem('token') }
 
 })
