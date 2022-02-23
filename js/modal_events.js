@@ -51,7 +51,7 @@ function closeConfirm() {
 }
 
 function onDeleteEvent(id) {
-  fetch('https://frozen-badlands-30191.herokuapp.com/delete-event', {
+  fetch('https://calendar-server-test.herokuapp.com/delete-event', {
         method: 'POST',
         headers: {
           'Authorization': 'Bearer ' + localStorage.getItem('token'),
