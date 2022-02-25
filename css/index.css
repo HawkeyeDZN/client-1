@@ -1,0 +1,92 @@
+@import url(reset.css);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+:root{
+    --color-theme: #859FF4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header_block {
+    padding: 30px 30px;
+    background-color: var(--color-theme);
+    text-align: center;
+}
+
+.header__content {
+    margin-top: 150px;
+}
+
+.header__content_img {
+    background-image: url(../img/header_img.jpg);
+    background-size: cover;
+    width:  500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.header__content_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__text {
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.header__button_links {
+    width: 400px;
+    height: 300px;
+    box-shadow: -1px 0px 19px -8px rgba(34, 60, 80, 0.2);
+    text-align: center;
+}
+
+.header__button_blocks {
+    margin-top: 40px;
+}
+
+.header__link {
+    display: block;
+    padding: 15px 32px;
+    border: 2px solid #000;
+    width: 240px;
+    height: 65px;
+    margin: 0 auto;
+    font-size: 25px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.sign_up_btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.sign_in_btn {
+    border: 2px solid var(--color-theme);
+    background: var(--color-theme);
+    color: #fff;
+}
+
+.sign_in_btn:hover {
+    background: #fff;
+    color: var(--color-theme);
+}
