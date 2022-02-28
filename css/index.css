@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__content {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .header__content_img {
@@ -89,4 +89,45 @@ h1, h2, h3, h4, h5, h6 {
 .sign_in_btn:hover {
     background: #fff;
     color: var(--color-theme);
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+
+    .header__content_img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .header__button_links {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .header__content_img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .header__content_block {
+        flex-direction: column;
+    }
+
+    .header__content {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
 }
