@@ -6,7 +6,7 @@ let fnEvent = onLoadEvents();
 
 function openModal(i, month, year) {
   modalEvent.style.display = "block";
-  modalTitle.textContent = `${helper.createNumber(i)}.${helper.createNumber(month)}.${year}`;
+  modalTitle.innerHTML = `${helper.createNumber(i)}.${helper.createNumber(month)}.${year}`;
   fnEvent(`${helper.createNumber(i)}.${helper.createNumber(month)}.${year}`);
 }
 
@@ -29,11 +29,23 @@ function onLoadEvents() {
     .then(result => {
       for(let i = 0; i < result.length; i++){
       if(result[i].date == data) {
-        document.getElementsByClassName("container_events")[0].innerHTML += `<div class="event" id="event_${i}">${result[i].title}<span id="${i}" class="delete" onclick="openConfirm(${i});">&times;</span></div>`
+        document.getElementsByClassName("container_events")[0].innerHTML += `<div class="event" id="event_${i}" onclick="openDescription(${i});">${result[i].title}<div class="event_description" id="event_description_${i}">${result[i].description}</div><span id="${i}" class="delete" onclick="openConfirm(${i});">&times;</span></div>`
       }
     }
   })
     return temp;
+  }
+}
+
+function openDescription(id) {
+  let description = document.getElementById(`event_description_${id}`);
+  let event = document.getElementById(`event_${id}`);
+  if (event.style.height == '60px') {
+    event.style.height = '40px';
+    description.style.display = 'none';
+  } else {
+    event.style.height = '60px';
+    description.style.display = 'inline';
   }
 }
 

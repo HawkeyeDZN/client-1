@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid #6d6d6d;
 }
 
-.descrtiption {
+.description {
     padding: 10px 15px 65px;
     overflow: hidden;
     resize: none;
@@ -359,6 +359,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .modal-titleEvent {
@@ -440,6 +441,10 @@ h1, h2, h3, h4, h5, h6 {
 .no:hover {
     background: #FFF;
     color: #0000ff;
+}
+
+.event_description {
+    display: none;
 }
 
 @media screen and (max-width: 992px) {
